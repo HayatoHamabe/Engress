@@ -1,0 +1,9 @@
+@use "../../global" as g;
+
+// component, project で対応できない例外を記述
+.sp-only {
+  display: none;
+  @include g.mq(md) {
+    display: block;
+  }
+}
