@@ -1,0 +1,52 @@
+@use "../../global" as g;
+
+.p-header {
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: block;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__business {
+    text-align: right;
+    margin-right: 23px;
+  }
+  &__business-hours {
+    @include g.font-size(12);
+  }
+  &__business-phone {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    @include g.font-size(16);
+  }
+  &__business-phone-icon {
+    height: 15px;
+    margin-right: 5px;
+  }
+}
+
+.p-header-btn {
+  &__document,
+  &__contact {
+    display: block;
+    border-radius: 8px;
+    color: #fff;
+    line-height: 1;
+    @include g.font-size(14);
+  }
+  &__document {
+    background-color: g.$color-secondary;
+    padding: 18px 43px;
+    margin-right: 10px;
+  }
+  &__contact {
+    background-color: g.$color-primary;
+    padding: 18px 27px;
+  }
+}

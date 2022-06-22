@@ -325,9 +325,9 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   line-height: 1.8;
-  color: #000;
+  color: #1b224c;
   letter-spacing: 0.05em;
   overflow-x: hidden;
   font-size: 15px;
@@ -342,10 +342,93 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #1b224c;
 }
 
 img {
   max-width: 100%;
   vertical-align: bottom;
+}
+
+.l-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  height: 80px;
+  margin: 0 15px;
+}
+
+.l-header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.p-header__left {
+  display: flex;
+  align-items: center;
+}
+.p-header__logo {
+  display: block;
+}
+.p-header__right {
+  display: flex;
+  align-items: center;
+}
+.p-header__business {
+  text-align: right;
+  margin-right: 23px;
+}
+.p-header__business-hours {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.p-header__business-phone {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.p-header__business-phone-icon {
+  height: 15px;
+  margin-right: 5px;
+}
+
+.p-header-btn__document, .p-header-btn__contact {
+  display: block;
+  border-radius: 8px;
+  color: #fff;
+  line-height: 1;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.p-header-btn__document {
+  background-color: #f5a623;
+  padding: 18px 43px;
+  margin-right: 10px;
+}
+.p-header-btn__contact {
+  background-color: #1b224c;
+  padding: 18px 27px;
+}
+
+.p-global-nav__list {
+  display: flex;
+  list-style: none;
+}
+.p-global-nav__item {
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-left: 28px;
+}
+
+.sp-only {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sp-only {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
