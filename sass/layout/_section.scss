@@ -4,5 +4,6 @@
   &__heading {
     @include g.font-size(36);
     text-align: center;
+    line-height: 1;
   }
 }

@@ -1,0 +1,42 @@
+@use "../../global" as g;
+
+.p-flow {
+  &__inner {
+    padding: 58px 15px 75px;
+  }
+  &__heading {
+    margin-bottom: 53px;
+  }
+  &__flow {
+    display: flex;
+    background-color: #f8f8f8;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  &__list-head {
+    width: 33%;
+  }
+  &__flow-number {
+    display: inline-block;
+    @include g.font-size(16);
+    line-height: 1;
+    background-color: g.$color-secondary;
+    color: #fff;
+    padding: 24px 23px;
+  }
+  &__flow-action {
+    font-weight: bold;
+    @include g.font-size(18);
+    padding-left: 21px;
+  }
+  &__flow-text {
+    @include g.font-size(16);
+    line-height: 2.5;
+    border-left: 1px solid #c3c3c3;
+    padding-left: 53.5px;
+  }
+}
