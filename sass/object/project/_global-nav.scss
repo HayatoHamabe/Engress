@@ -1,0 +1,13 @@
+@use "../../global" as g;
+
+.p-global-nav {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    font-weight: bold;
+    @include g.font-size(16);
+    margin-left: 28px;
+  }
+}
