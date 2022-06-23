@@ -29,7 +29,41 @@
     </div>
   </div>
 
-  <main></main>
+  <main>
+    <section class="p-introduction l-section">
+      <div class="p-introduction__inner l-section__inner">
+        <h3 class="p-introduction__heading l-section__heading">TOEFL学習でこんな悩みありませんか？</h3>
+
+        <div class="p-introduction__worries">
+          <p class="p-introduction__worrie">
+            勉強の習慣が<br>
+            身についていない
+          </p>
+          <p class="p-introduction__worrie">
+            勉強しているはず<br>
+            なのに点数が伸びない
+          </p>
+          <p class="p-introduction__worrie">
+            正しい勉強方法が<br>
+            わからない
+          </p>
+        </div>
+
+        <div class="p-introduction__answer">
+          <div class="p-introduction__answer-inner">
+            <h4 class="p-introduction__answer-heading">Engressは<br>
+              <span class="p-introduction__underline">TOEFLに特化したスクール</span>です
+            </h4>
+            <p class="p-introduction__answer-text">
+              完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br>
+              TOEFLの苦手分野を克服します。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
 
   <footer><?php wp_footer(); ?></footer>
 </body>

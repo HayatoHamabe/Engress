@@ -1,4 +1,7 @@
 @use "../global" as g;
 
 .l-section {
+  &__heading {
+    @include g.font-size(36);
+  }
 }
