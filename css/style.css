@@ -424,6 +424,50 @@ img {
   margin-left: 28px;
 }
 
+.p-hero__inner {
+  background-image: url("../img/hero.png");
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1280px;
+  min-height: 476px;
+}
+.p-hero__title {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+.p-hero__text {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1;
+  margin-bottom: 51px;
+}
+.p-hero__btn {
+  background-color: #f5a623;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  padding: 22px 95px;
+  border-radius: 9999px;
+  margin-bottom: 22px;
+}
+.p-hero__btn:hover {
+  opacity: 0.8;
+}
+.p-hero__link {
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  text-decoration: underline;
+}
+.p-hero__link:hover {
+  opacity: 0.6;
+}
+
 .sp-only {
   display: none;
 }
