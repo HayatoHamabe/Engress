@@ -370,6 +370,7 @@ img {
 .l-section__heading {
   font-size: 36px;
   font-size: 2.25rem;
+  text-align: center;
 }
 
 .p-header__left {
@@ -529,7 +530,6 @@ img {
   padding: 59px 15px 39px;
 }
 .p-features__heading {
-  text-align: center;
   margin-bottom: 59px;
 }
 .p-features__features {
@@ -595,6 +595,72 @@ img {
   border-radius: 9999px;
   line-height: 1;
   padding: 18px 44px;
+}
+
+.p-success {
+  background-color: #1b224c;
+}
+.p-success__inner {
+  max-width: 930px;
+  padding: 60px 15px;
+  margin: 0 auto;
+}
+.p-success__heading {
+  color: #fff;
+  margin-bottom: 137px;
+}
+.p-success__cards {
+  display: flex;
+  gap: 30px;
+  color: #fff;
+}
+.p-success__card-text {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 9px;
+}
+.p-success__card-img-wrapper {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  height: 171px;
+}
+.p-success__card-img {
+  position: absolute;
+  right: 25%;
+  bottom: 0;
+}
+.p-success__personal {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.p-success__profession {
+  font-size: 16px;
+  font-size: 1rem;
+  background-color: #fff;
+  display: inline-block;
+  color: #1b224c;
+  width: 100px;
+  padding: 8px 0 8px 10px;
+  margin-right: 8px;
+}
+.p-success__name {
+  font-size: 16px;
+  font-size: 1rem;
+  background-color: #fff;
+  display: inline-block;
+  color: #1b224c;
+  width: 172px;
+  padding: 8px 0 8px 10px;
+}
+.p-success__score {
+  font-size: 16px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #1b224c;
+  width: 100%;
+  padding: 8px 0 8px 10px;
 }
 
 .sp-only {
