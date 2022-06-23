@@ -1,0 +1,63 @@
+@use "../../global" as g;
+
+.p-success {
+  background-color: g.$color-primary;
+  &__inner {
+    max-width: 930px;
+    padding: 60px 15px;
+    margin: 0 auto;
+  }
+  &__heading {
+    color: #fff;
+    margin-bottom: 137px;
+  }
+  &__cards {
+    display: flex;
+    gap: 30px;
+    color: #fff;
+  }
+  &__card-text {
+    @include g.font-size(16);
+    margin-bottom: 9px;
+  }
+  &__card-img-wrapper {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    height: 171px;
+  }
+  &__card-img {
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+  }
+  &__personal {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+  &__profession {
+    @include g.font-size(16);
+    background-color: #fff;
+    display: inline-block;
+    color: g.$color-primary;
+    width: 100px;
+    padding: 8px 0 8px 10px;
+    margin-right: 8px;
+  }
+  &__name {
+    @include g.font-size(16);
+    background-color: #fff;
+    display: inline-block;
+    color: g.$color-primary;
+    width: 172px;
+    padding: 8px 0 8px 10px;
+  }
+  &__score {
+    @include g.font-size(16);
+    background-color: #fff;
+    color: g.$color-primary;
+    width: 100%;
+    padding: 8px 0 8px 10px;
+  }
+}
