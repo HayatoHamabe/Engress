@@ -371,6 +371,7 @@ img {
   font-size: 36px;
   font-size: 2.25rem;
   text-align: center;
+  line-height: 1;
 }
 
 .p-header__left {
@@ -638,7 +639,7 @@ img {
 .p-success__profession {
   font-size: 16px;
   font-size: 1rem;
-  background-color: #fff;
+  background-color: #fbfbfb;
   display: inline-block;
   color: #1b224c;
   width: 100px;
@@ -648,7 +649,7 @@ img {
 .p-success__name {
   font-size: 16px;
   font-size: 1rem;
-  background-color: #fff;
+  background-color: #fbfbfb;
   display: inline-block;
   color: #1b224c;
   width: 172px;
@@ -657,10 +658,52 @@ img {
 .p-success__score {
   font-size: 16px;
   font-size: 1rem;
-  background-color: #fff;
+  background-color: #fbfbfb;
   color: #1b224c;
   width: 100%;
   padding: 8px 0 8px 10px;
+}
+
+.p-flow__inner {
+  padding: 58px 15px 75px;
+}
+.p-flow__heading {
+  margin-bottom: 53px;
+}
+.p-flow__flow {
+  display: flex;
+  background-color: #f8f8f8;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.p-flow__flow:not(:last-child) {
+  margin-bottom: 8px;
+}
+.p-flow__list-head {
+  width: 33%;
+}
+.p-flow__flow-number {
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: #f5a623;
+  color: #fff;
+  padding: 24px 23px;
+}
+.p-flow__flow-action {
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding-left: 21px;
+}
+.p-flow__flow-text {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 2.5;
+  border-left: 1px solid #c3c3c3;
+  padding-left: 53.5px;
 }
 
 .sp-only {

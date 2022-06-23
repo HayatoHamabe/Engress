@@ -164,6 +164,44 @@
 
         </div>
       </div>
+    </section><!-- p-success -->
+
+    <section class="p-flow l-section">
+      <div class="p-flow__inner l-section__inner">
+        <h3 class="p-flow__heading l-section__heading">ご利用の流れ</h3>
+
+        <div class="p-flow__flow">
+          <div class="p-flow__list-head">
+            <span class="p-flow__flow-number">01</span>
+            <span class="p-flow__flow-action">お問い合わせ</span>
+          </div>
+          <span class="p-flow__flow-text">まずはフォームまたはお電話からお申し込みください。</span>
+        </div><!-- flow1 -->
+
+        <div class="p-flow__flow">
+          <div class="p-flow__list-head">
+            <span class="p-flow__flow-number">02</span>
+            <span class="p-flow__flow-action">ヒアリング</span>
+          </div>
+          <span class="p-flow__flow-text">現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</span>
+        </div><!-- flow2 -->
+
+        <div class="p-flow__flow">
+          <div class="p-flow__list-head">
+            <span class="p-flow__flow-number">03</span>
+            <span class="p-flow__flow-action">学習プランのご提供</span>
+          </div>
+          <span class="p-flow__flow-text">目標達成のために最適な学習プランをご提案致します。</span>
+        </div><!-- flow3 -->
+
+        <div class="p-flow__flow">
+          <div class="p-flow__list-head">
+            <span class="p-flow__flow-number">04</span>
+            <span class="p-flow__flow-action">ご入会</span>
+          </div>
+          <span class="p-flow__flow-text">お申込み完了後、レッスンがスタートします。</span>
+        </div><!-- flow4 -->
+      </div>
     </section>
   </main>
 
