@@ -62,7 +62,64 @@
         </div>
 
       </div>
-    </section>
+    </section><!-- p-introduction -->
+
+    <section class="p-features l-section">
+      <div class="p-features__inner l-section__inner">
+        <h3 class="p-features__heading l-section__heading">TOEFL対策に特化したEngress3つの強み</h3>
+
+        <div class="p-features__features">
+          <div class="p-features__card">
+            <div class="p-features__card-content">
+              <span class="p-features__card-tag">特徴1</span>
+              <h5 class="p-features__card-title">
+                TOEFLに最適化された<br>
+                無駄のないカリキュラム
+              </h5>
+              <p>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+            </div>
+
+            <div class="p-features__card-img-wrapper">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/feature/feature01.png" alt="feature1" class="p-features__card-img">
+            </div>
+          </div><!-- card1 -->
+
+          <div class="p-features__card">
+            <div class="p-features__card-content">
+              <span class="p-features__card-tag">特徴2</span>
+              <h5 class="p-features__card-title">
+                TOEFLに最適化された<br>
+                無駄のないカリキュラム
+              </h5>
+              <p>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+            </div><!-- card2 -->
+
+            <div class="p-features__card-img-wrapper">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/feature/feature02.png" alt="feature2" class="p-features__card-img">
+            </div>
+          </div>
+
+          <div class="p-features__card">
+            <div class="p-features__card-content">
+              <span class="p-features__card-tag">特徴3</span>
+              <h5 class="p-features__card-title">
+                TOEFLに最適化された<br>
+                無駄のないカリキュラム
+              </h5>
+              <p>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+            </div>
+
+            <div class="p-features__card-img-wrapper">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/feature/feature03.png" alt="feature3" class="p-features__card-img">
+            </div>
+          </div><!-- card3 -->
+        </div>
+
+        <div class="p-features__price">
+          <div class="p-features__price-heading">Engressの料金プランはこちら</div>
+          <a href="<?php echo esc_url(home_url('price')); ?>" class="p-features__price-link">料金を見てみる</a>
+        </div>
+    </section><!-- p-features -->
   </main>
 
   <footer><?php wp_footer(); ?></footer>
