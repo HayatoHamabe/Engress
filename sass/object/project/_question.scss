@@ -1,0 +1,67 @@
+@use "../../global" as g;
+
+.p-question {
+  padding: 0 15px;
+  &__inner {
+    max-width: 900px;
+    padding-bottom: 90px;
+    margin: 0 auto;
+  }
+  &__heading {
+    margin-bottom: 32px;
+  }
+  &__list {
+    &:last-of-type {
+      border-bottom: 1px solid g.$color-primary;
+    }
+  }
+  &__item {
+    border-top: 1px solid g.$color-primary;
+    @include g.font-size(16);
+  }
+  &__question,
+  &__answer {
+    padding: 31px 0 21px;
+  }
+  &__question {
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      background-color: g.$color-primary;
+      position: absolute;
+      top: 50%;
+      right: 21px;
+      width: 25px;
+      height: 3px;
+    }
+    &::after {
+      transform: rotate(90deg);
+      transition: 0.3s;
+    }
+    &.active {
+      &::before {
+        display: none;
+      }
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  &__answer {
+    background-color: #f8f8f8;
+    padding: 0;
+    margin-bottom: 9px;
+    padding-left: 25px;
+    opacity: 0;
+    height: 0;
+    line-height: 1;
+    transition: all 0.5s;
+    line-height: 79px;
+    &.active {
+      opacity: 1;
+      height: 79px;
+      line-height: 79px;
+    }
+  }
+}
