@@ -125,44 +125,30 @@
       <div class="p-success__inner l-section__inner">
         <h3 class="p-success__heading l-section__heading">TOEFL成功事例</h3>
 
-        <div class="p-success__cards">
-          <div class="p-success__card">
-            <p class="p-success__card-text">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p>
-            <div class="p-success__card-img-wrapper">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/model/model01.png" alt="model01" class="p-success__card-img">
-            </div>
-            <div class="p-success__personal">
-              <span class="p-success__profession">会社員</span>
-              <span class="p-success__name">T.Fujiyamaさん</span>
-            </div>
-            <div class="p-success__score">3ヶ月でTOEFL80→108点</div>
-          </div><!-- card1 -->
+        <?php
+        $args = [
+          'post_type' => 'success-case',
+          'posts_per_page' => 3, // 表示数
+        ];
+        $my_query = new WP_Query($args); ?>
+        <?php if ($my_query->have_posts()) : ?>
+          <div class="p-success__cards">
+            <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+              <div class="p-success__card">
+                <p class="p-success__card-text"><?php the_field('top-text'); ?></p>
+                <div class="p-success__card-img-wrapper">
+                  <img src="<?php the_field('user-img'); ?>" alt="model01" class="p-success__card-img">
+                </div>
+                <div class="p-success__personal">
+                  <span class="p-success__profession"><?php the_field('profession'); ?></span>
+                  <span class="p-success__name"><?php the_field('name'); ?>さん</span>
+                </div>
+                <div class="p-success__score">3ヶ月でTOEFL80→108点</div>
+              </div>
+            <?php endwhile; ?>
+          </div>
+        <?php endif; ?>
 
-          <div class="p-success__card">
-            <p class="p-success__card-text">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</p>
-            <div class="p-success__card-img-wrapper">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/model/model02.png" alt="model02" class="p-success__card-img">
-            </div>
-            <div class="p-success__personal">
-              <span class="p-success__profession">大学生</span>
-              <span class="p-success__name">Y.Takiyamaさん</span>
-            </div>
-            <div class="p-success__score">6ヶ月でTOEFL40→100点</div>
-          </div><!-- card2 -->
-
-          <div class="p-success__card">
-            <p class="p-success__card-text">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</p>
-            <div class="p-success__card-img-wrapper">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/model/model03.png" alt="model03" class="p-success__card-img">
-            </div>
-            <div class="p-success__personal">
-              <span class="p-success__profession">高校生</span>
-              <span class="p-success__name">M.Yamadaさん</span>
-            </div>
-            <div class="p-success__score">5ヶ月でTOEFL68→109点</div>
-          </div><!-- card3 -->
-
-        </div>
       </div>
     </section><!-- p-success -->
 
