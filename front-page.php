@@ -203,9 +203,39 @@
         </div><!-- flow4 -->
       </div>
     </section>
+
+    <section class="p-question l-section">
+      <div class="p-question__inner l-section__inner">
+        <h3 class="p-question__heading l-section__heading">よくある質問</h3>
+
+        <div class="p-question__list">
+          <div class="p-question__item">
+            <div class="p-question__question">Engressはサラリーマンでも学習を続けられるでしょうか？</div>
+            <div class="p-question__answer">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
+          </div><!-- question-item1 -->
+
+          <div class="p-question__item">
+            <div class="p-question__question">教材はオリジナルのものを使用しているのでしょうか？</div>
+            <div class="p-question__answer">教材はEngressオリジナルのものを使用しています。</div>
+          </div><!-- question-item2 -->
+
+          <div class="p-question__item">
+            <div class="p-question__question">講師に日本人はいますか？</div>
+            <div class="p-question__answer">日本人講師も在籍しています。</div>
+          </div><!-- question-item3 -->
+
+          <div class="p-question__item">
+            <div class="p-question__question">TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</div>
+            <div class="p-question__answer">TOEFLE対策専門のため、それ以外のサポートは行っておりません。</div>
+          </div><!-- question-item4 -->
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer><?php wp_footer(); ?></footer>
+
+  <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 </body>
 
 </html>

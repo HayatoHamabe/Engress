@@ -1,8 +1,9 @@
 @use "../../global" as g;
 
 .p-features {
+  padding: 0 15px;
   &__inner {
-    padding: 59px 15px 39px;
+    padding: 59px 0 39px;
   }
   &__heading {
     margin-bottom: 59px;
@@ -51,7 +52,7 @@
     color: #fff;
     max-width: 900px;
     margin: 0 auto;
-    padding: 61px 15px 0;
+    padding-top: 61px;
     height: 217px;
   }
   &__price-heading {
