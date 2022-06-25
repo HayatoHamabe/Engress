@@ -14,6 +14,13 @@
 # wordpress 化した点
 
 - トップ
-  - ブログリスト
+  - 「TOEFL 成功事例」の各ユーザー情報はカスタム投稿タイプにカスタムフィールドを使用し、クライアントが簡単に情報を書き換えることができ、かつデザインが崩れないようにした
+  - ブログリストは「投稿」を使用
 - その他
   - ヘッダー・フッターのコンポーネント化
+
+# メモ
+
+- ACF 関数が Intelephense に認識されず、動作はするが undefind 扱いされるとき
+  - [参考記事](https://marioyepes.com/intelephense-wordpress-acf-genesis-conf/)
+  - [composer が実行できない時の参考記事](https://code-graffiti.com/install-comporser-on-mac/)
