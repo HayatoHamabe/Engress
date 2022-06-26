@@ -281,6 +281,8 @@
         </div>
       </div>
     </section>
+
+    <?php get_template_part('/common/contact') ?>
   </main>
 
   <footer><?php wp_footer(); ?></footer>
