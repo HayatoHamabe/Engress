@@ -5,5 +5,12 @@
     @include g.font-size(36);
     text-align: center;
     line-height: 1;
+    @include g.mq(lg) {
+      @include g.font-size(30);
+    }
+    @include g.mq(md) {
+      @include g.font-size(32);
+      line-height: 1.3;
+    }
   }
 }

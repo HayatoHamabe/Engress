@@ -1,9 +1,23 @@
 @use "../../global" as g;
 
 // component, project で対応できない例外を記述
-.sp-only {
+.not-sp-only {
+  display: block;
+  @include g.mq(md) {
+    display: none;
+  }
+}
+
+.tablet-only {
   display: none;
   @include g.mq(lg) {
+    display: block;
+  }
+}
+
+.sp-only {
+  display: none;
+  @include g.mq(md) {
     display: block;
   }
 }

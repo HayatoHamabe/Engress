@@ -13,7 +13,7 @@
   <div class="p-hero">
     <div class="p-hero__inner">
       <div class="p-hero__content">
-        <h2 class="p-hero__title">TOEFL対策はEngress</h2>
+        <h2 class="p-hero__title">TOEFL対策は<br class="sp-only">Engress</h2>
         <p class="p-hero__text">
           日本人へのTOEFL指導歴豊かな講師陣の<br>
           コーチング型TOEFLスクール
@@ -32,20 +32,17 @@
   <main>
     <section class="p-introduction l-section">
       <div class="p-introduction__inner l-section__inner">
-        <h3 class="p-introduction__heading l-section__heading">TOEFL学習でこんな悩みありませんか？</h3>
+        <h3 class="p-introduction__heading l-section__heading">TOEFL学習で<br class="sp-only">こんな悩み<br class="sp-only">ありませんか？</h3>
 
         <div class="p-introduction__worries">
           <p class="p-introduction__worrie">
-            勉強の習慣が<br>
-            身についていない
+            勉強の習慣が<br class="not-sp-only">身についていない
           </p>
           <p class="p-introduction__worrie">
-            勉強しているはず<br>
-            なのに点数が伸びない
+            勉強しているはず<br class="not-sp-only">なのに点数が伸びない
           </p>
           <p class="p-introduction__worrie">
-            正しい勉強方法が<br>
-            わからない
+            正しい勉強方法が<br class="not-sp-only">わからない
           </p>
         </div>
 
@@ -55,7 +52,7 @@
               <span class="p-introduction__underline">TOEFLに特化したスクール</span>です
             </h4>
             <p class="p-introduction__answer-text">
-              完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br>
+              完全オーダーメイドで、<br class="sp-only">１人１人の悩みに合わせた最適な指導で<br>
               TOEFLの苦手分野を克服します。
             </p>
           </div>
@@ -76,7 +73,7 @@
                 TOEFLに最適化された<br>
                 無駄のないカリキュラム
               </h5>
-              <p>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+              <p class="p-features__card-text">TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
             </div>
 
             <div class="p-features__card-img-wrapper">
@@ -91,7 +88,7 @@
                 TOEFLに最適化された<br>
                 無駄のないカリキュラム
               </h5>
-              <p>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+              <p class="p-features__card-text">TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
             </div><!-- card2 -->
 
             <div class="p-features__card-img-wrapper">
@@ -106,7 +103,7 @@
                 TOEFLに最適化された<br>
                 無駄のないカリキュラム
               </h5>
-              <p>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+              <p class="p-features__card-text">TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
             </div>
 
             <div class="p-features__card-img-wrapper">

@@ -16,9 +16,19 @@
     &:not(:last-child) {
       margin-bottom: 8px;
     }
+    @include g.mq(lg) {
+      display: block;
+    }
   }
   &__list-head {
     width: 33%;
+    @include g.mq(lg) {
+      width: 35%;
+    }
+    @include g.mq(md) {
+      width: 100%;
+      margin-bottom: 8px;
+    }
   }
   &__flow-number {
     display: inline-block;
@@ -27,16 +37,31 @@
     background-color: g.$color-secondary;
     color: #fff;
     padding: 24px 23px;
+    @include g.mq(md) {
+      @include g.font-size(14);
+      padding: 12px 23px;
+    }
   }
   &__flow-action {
     font-weight: bold;
     @include g.font-size(18);
     padding-left: 21px;
+    @include g.mq(lg) {
+      @include g.font-size(16);
+    }
   }
   &__flow-text {
     @include g.font-size(16);
     line-height: 2.5;
     border-left: 1px solid #c3c3c3;
-    padding-left: 53.5px;
+    padding-left: 53px;
+    @include g.mq(lg) {
+      @include g.font-size(14);
+      padding-left: 32px;
+    }
+    @include g.mq(md) {
+      border-left: none;
+      @include g.font-size(16);
+    }
   }
 }
