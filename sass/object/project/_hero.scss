@@ -2,6 +2,9 @@
 
 .p-hero {
   padding-top: 80px;
+  @include g.mq(lg) {
+    padding-top: 60px;
+  }
   &__inner {
     background-image: url("../img/hero.png");
     background-size: cover;
