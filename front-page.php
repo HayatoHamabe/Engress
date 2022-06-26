@@ -282,12 +282,12 @@
       </div>
     </section>
 
-    <?php get_template_part('/common/contact') ?>
+    <?php get_template_part('/common/contact'); ?>
   </main>
 
-  <footer><?php wp_footer(); ?></footer>
+  <?php get_template_part('/common/footer'); ?>
+  <?php get_footer(); ?>
 
-  <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 </body>
 
 </html>

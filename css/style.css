@@ -368,6 +368,14 @@ img {
   align-items: center;
 }
 
+.l-footer__inner {
+  position: relative;
+  color: #fff;
+  background-color: #1b224c;
+  padding-left: 15%;
+  margin: 0 auto;
+}
+
 .l-section__heading {
   font-size: 36px;
   font-size: 2.25rem;
@@ -932,6 +940,66 @@ img {
 .p-tel__hours {
   font-size: 16px;
   font-size: 1rem;
+}
+
+.p-footer__nav {
+  padding: 49px 0 165px;
+}
+.p-footer__list {
+  display: flex;
+  list-style: none;
+}
+.p-footer__item:not(:first-child) {
+  padding-left: 21px;
+}
+.p-footer__item:not(:last-child) {
+  padding-right: 21px;
+  border-right: 1px solid #fff;
+}
+.p-footer__link {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.p-footer__link:hover {
+  opacity: 0.8;
+}
+.p-footer__heading {
+  position: absolute;
+  top: 35px;
+  right: 13%;
+}
+.p-footer__logo-wrapper {
+  margin-bottom: 27px;
+}
+.p-footer__logo {
+  background-color: #fff;
+  padding: 13px 19px 14px;
+}
+.p-footer__tel {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  fill: #fff;
+  margin-bottom: 13px;
+}
+.p-footer__tel-icon {
+  height: 15px;
+  margin-right: 5px;
+}
+.p-footer__hours {
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-align: right;
+}
+.p-footer__copyright {
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-align: right;
+  line-height: 36px;
+  padding-right: 13%;
 }
 
 .sp-only {

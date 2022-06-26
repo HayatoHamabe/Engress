@@ -1,4 +1,11 @@
 @use "../global" as g;
 
 .l-footer {
+  &__inner {
+    position: relative;
+    color: #fff;
+    background-color: g.$color-primary;
+    padding-left: 15%;
+    margin: 0 auto;
+  }
 }
