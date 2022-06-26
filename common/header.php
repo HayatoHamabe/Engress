@@ -20,19 +20,19 @@
         </div>
 
         <div class="l-header-nav">
-          <nav class="p-global-nav">
+          <nav class="p-global-nav" id="global-nav">
             <ul class="p-global-nav__list">
               <li class="p-global-nav__item">
-                <a href="<?php echo esc_url(home_url()); ?>">ホーム</a>
+                <a href="<?php echo esc_url(home_url()); ?>" class="p-gloval-nav__link">ホーム</a>
               </li>
               <li class="p-global-nav__item">
-                <a href="<?php echo get_post_type_archive_link("news"); ?>">お知らせ</a>
+                <a href="<?php echo get_post_type_archive_link("news"); ?>" class="p-gloval-nav__link">お知らせ</a>
               </li>
               <li class="p-global-nav__item">
-                <a href="<?php echo esc_url(home_url("blogs")); ?>">ブログ</a>
+                <a href="<?php echo esc_url(home_url("blogs")); ?>" class="p-gloval-nav__link">ブログ</a>
               </li>
               <li class="p-global-nav__item">
-                <a href="<?php echo esc_url(home_url("price")); ?>">コース・料金</a>
+                <a href="<?php echo esc_url(home_url("price")); ?>" class="p-gloval-nav__link">コース・料金</a>
               </li>
             </ul>
           </nav>
@@ -66,6 +66,11 @@
         <div class="p-header-btn__contact-wrapper">
           <a href="<?php echo esc_url(home_url("contact")); ?>" class="p-header-btn__contact">お問い合わせ</a>
         </div>
+
+        <!-- only low 960px -->
+        <button class="c-btn-menu" onclick="toggle()">
+          <span class="c-btn-line" id="hamburger-line"></span>
+        </button>
       </div><!-- p-header-right -->
 
     </div>
