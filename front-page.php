@@ -130,14 +130,14 @@
           'post_type' => 'success-case',
           'posts_per_page' => 3, // 表示数
         ];
-        $my_query = new WP_Query($args); ?>
-        <?php if ($my_query->have_posts()) : ?>
+        $successCases = new WP_Query($args); ?>
+        <?php if ($successCases->have_posts()) : ?>
           <div class="p-success__cards">
-            <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+            <?php while ($successCases->have_posts()) : $successCases->the_post(); ?>
               <div class="p-success__card">
                 <p class="p-success__card-text"><?php the_field('top-text'); ?></p>
                 <div class="p-success__card-img-wrapper">
-                  <img src="<?php the_field('user-img'); ?>" alt="model01" class="p-success__card-img">
+                  <img src="<?php the_field('user-img'); ?>" alt="model-img" class="p-success__card-img">
                 </div>
                 <div class="p-success__personal">
                   <span class="p-success__profession"><?php the_field('profession'); ?></span>
@@ -196,8 +196,8 @@
 
         <div class="p-question__list">
           <div class="p-question__item">
-            <div class="p-question__question">Engressはサラリーマンでも学習を続けられるでしょうか？</div>
-            <div class="p-question__answer">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
+            <div class="p-question__question active">Engressはサラリーマンでも学習を続けられるでしょうか？</div>
+            <div class="p-question__answer active">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
           </div><!-- question-item1 -->
 
           <div class="p-question__item">
@@ -214,6 +214,70 @@
             <div class="p-question__question">TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</div>
             <div class="p-question__answer">TOEFLE対策専門のため、それ以外のサポートは行っておりません。</div>
           </div><!-- question-item4 -->
+        </div>
+      </div>
+    </section>
+
+    <section class="p-post l-section">
+      <div class="p-post__inner l-section__inner">
+
+        <div class="p-post__blog">
+          <h4 class="p-post__heading">ブログ</h4>
+          <?php
+          // タグ「ブログ」がついた投稿の最新３件を取得
+          $arg   = array(
+            'posts_per_page' => 3, // 表示する件数
+            'orderby'        => 'id', // 日付でソート
+            'order'          => 'ASC',
+            'tag'            => 'ブログ'
+          );
+          $posts = get_posts($arg);
+          if ($posts) : ?>
+            <div class="p-post__blog-list">
+              <?php
+              foreach ($posts as $post) :
+                setup_postdata($post); ?>
+                <div class="p-post__blog-item">
+                  <div class="p-post__blog-img-wrapper">
+                    <?php $category = get_the_category(); ?>
+                    <span class="p-post__blog-category"><?php echo $category[0]->cat_name; ?></span>
+                    <?php the_post_thumbnail('thumbnail', ['class' => 'p-post__blog-img']); ?>
+                  </div>
+                  <div class="p-post__blog-info">
+                    <a href="<?php the_permalink(); ?>" class="p-post__blog-link"><?php the_title(); ?></a>
+                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-post__blog-time"><?php echo get_the_date("Y.m.d"); ?></time>
+                  </div>
+                </div>
+              <?php endforeach; ?>
+            </div>
+          <?php
+          endif;
+          wp_reset_postdata();
+          ?>
+        </div>
+
+        <div class="p-post__news">
+          <h4 class="p-post__heading">お知らせ</h4>
+
+          <?php
+          $args = [
+            'post_type' => 'news',
+            'posts_per_page' => 3, // 表示数
+          ];
+          $news = new WP_Query($args); ?>
+          <?php if ($news->have_posts()) : ?>
+            <div class="p-post__news-list">
+
+              <?php while ($news->have_posts()) : $news->the_post(); ?>
+                <div class="p-post__news-item">
+                  <div class="p-post__news-info">
+                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-post__news-time"><?php echo get_the_date("Y.m.d"); ?></time>
+                    <a href="<?php the_permalink(); ?>" class="p-post__news-link"><?php the_title(); ?></a>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
     </section>
