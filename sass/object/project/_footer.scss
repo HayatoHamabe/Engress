@@ -1,0 +1,61 @@
+@use "../../global" as g;
+
+.p-footer {
+  &__nav {
+    padding: 49px 0 165px;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    &:not(:first-child) {
+      padding-left: 21px;
+    }
+    &:not(:last-child) {
+      padding-right: 21px;
+      border-right: 1px solid #fff;
+    }
+  }
+  &__link {
+    @include g.font-size(16);
+    font-weight: bold;
+    color: #fff;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__heading {
+    position: absolute;
+    top: 35px;
+    right: 13%;
+  }
+  &__logo-wrapper {
+    margin-bottom: 27px;
+  }
+  &__logo {
+    background-color: #fff;
+    padding: 13px 19px 14px;
+  }
+  &__tel {
+    @include g.font-size(16);
+    font-weight: bold;
+    text-align: right;
+    fill: #fff;
+    margin-bottom: 13px;
+  }
+  &__tel-icon {
+    height: 15px;
+    margin-right: 5px;
+  }
+  &__hours {
+    @include g.font-size(12);
+    text-align: right;
+  }
+  &__copyright {
+    @include g.font-size(12);
+    text-align: right;
+    line-height: 36px;
+    padding-right: 13%;
+  }
+}
