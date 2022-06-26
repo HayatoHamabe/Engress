@@ -41,6 +41,9 @@
       text-align: center;
       background-color: #fff;
       width: 100%;
+      &:hover {
+        opacity: 0.8;
+      }
       &:not(:last-child) {
         margin-bottom: 25px;
       }

@@ -56,9 +56,15 @@
     background-color: g.$color-secondary;
     padding: 18px 43px;
     margin-right: 10px;
+    &:hover {
+      opacity: 0.8;
+    }
   }
   &__contact {
     background-color: g.$color-primary;
     padding: 18px 27px;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

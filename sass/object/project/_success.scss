@@ -10,21 +10,42 @@
   &__heading {
     color: #fff;
     margin-bottom: 137px;
+    @include g.mq(lg) {
+      margin-bottom: 50px;
+    }
   }
   &__cards {
     display: flex;
     gap: 30px;
     color: #fff;
+    @include g.mq(lg) {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__card {
+    @include g.mq(lg) {
+      margin-bottom: 40px;
+    }
   }
   &__card-text {
     @include g.font-size(16);
     margin-bottom: 9px;
+    @include g.mq(lg) {
+      text-align: left;
+      width: 280px;
+      margin: 0 auto;
+    }
   }
   &__card-img-wrapper {
     position: relative;
     background-color: #fff;
     text-align: center;
     height: 171px;
+    @include g.mq(lg) {
+      width: 280px;
+      margin: 0 auto;
+    }
   }
   &__card-img {
     position: absolute;
@@ -33,6 +54,7 @@
   }
   &__personal {
     display: flex;
+    justify-content: center;
     margin-top: 16px;
     margin-bottom: 10px;
   }
@@ -59,5 +81,9 @@
     color: g.$color-primary;
     width: 100%;
     padding: 8px 0 8px 10px;
+    @include g.mq(lg) {
+      display: inline-block;
+      width: 280px;
+    }
   }
 }

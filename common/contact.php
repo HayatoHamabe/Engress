@@ -8,10 +8,8 @@
 
 <div class="p-tel">
   <div class="p-tel__inner">
-    <div>
-      <span class="p-tel__text">お電話でのお問い合わせはこちら</span>
-      <span class="p-tel__number">0123-456-7890</span>
-      <span class="ptel__hours">平日 08:00〜20:00</span>
-    </div>
+    <span class="p-tel__text">お電話でのお問い合わせはこちら</span>
+    <span class="p-tel__number">0123-456-7890</span>
+    <span class="ptel__hours">平日 08:00〜20:00</span>
   </div>
 </div>

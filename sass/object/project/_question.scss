@@ -21,7 +21,7 @@
   }
   &__question,
   &__answer {
-    padding: 31px 0 21px;
+    padding: 31px 67px 21px 0;
   }
   &__question {
     position: relative;
@@ -52,16 +52,18 @@
     background-color: #f8f8f8;
     padding: 0;
     margin-bottom: 9px;
-    padding-left: 25px;
     opacity: 0;
+    visibility: hidden;
     height: 0;
     line-height: 1;
-    transition: all 0.5s;
-    line-height: 79px;
+    transition: height 0.3s, opacity 0.3s;
+    line-height: 1.5;
+    padding: 0;
     &.active {
       opacity: 1;
-      height: 79px;
-      line-height: 79px;
+      visibility: visible;
+      height: auto;
+      padding: 23px 0 23px 25px;
     }
   }
 }

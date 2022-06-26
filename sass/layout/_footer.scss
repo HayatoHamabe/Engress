@@ -7,5 +7,12 @@
     background-color: g.$color-primary;
     padding-left: 15%;
     margin: 0 auto;
+    @include g.mq(lg) {
+      padding-left: 10%;
+    }
+    @include g.mq(md) {
+      text-align: center;
+      padding: 48px 15px;
+    }
   }
 }
