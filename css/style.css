@@ -1321,8 +1321,12 @@ img {
 }
 .p-contact__link {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #fff;
   text-decoration: underline;
+  margin: 0 auto;
   font-size: 16px;
   font-size: 1rem;
 }
