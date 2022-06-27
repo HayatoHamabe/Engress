@@ -57,6 +57,16 @@
                       }
                       ?>
                     </a>
+                    <p>
+                      <?php
+                      if (mb_strlen($post->post_content, 'UTF-8') > 70) {
+                        $content = str_replace('\n', '', mb_substr(strip_tags($post->post_content), 0, 70, 'UTF-8'));
+                        echo $content . '……';
+                      } else {
+                        echo str_replace('\n', '', strip_tags($post->post_content));
+                      }
+                      ?>
+                    </p>
                   </div>
                 </div>
             <?php endwhile;
