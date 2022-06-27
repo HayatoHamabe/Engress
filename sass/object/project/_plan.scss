@@ -16,6 +16,12 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 46px;
+    @include g.mq(md) {
+      flex-direction: column;
+    }
+  }
+  &__list {
+    overflow: scroll;
   }
   &__admission,
   &__monthly {
@@ -27,6 +33,11 @@
     line-height: 1;
     width: 280px;
     padding: 35px 0 32px;
+    @include g.mq(lg) {
+      @include g.font-size(20);
+      width: 220px;
+      padding: 25px 0 22px;
+    }
   }
   &__plus {
     line-height: 1;

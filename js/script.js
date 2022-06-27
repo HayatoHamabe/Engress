@@ -16,3 +16,10 @@ for (let i = 0; i < questions.length; i++) {
   });
 }
 delete questions;
+
+new ScrollHint(".js-scrollable", {
+  applyToParents: true,
+  i18n: {
+    scrollable: "スクロールできます",
+  },
+});

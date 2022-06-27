@@ -16,7 +16,7 @@
   &__item {
     border: 1px solid g.$color-primary;
     text-align: center;
-    width: 220px;
+    min-width: 220px;
     &:not(:last-child) {
       margin-right: 7px;
     }
