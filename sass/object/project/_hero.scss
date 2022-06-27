@@ -72,6 +72,9 @@
     justify-content: center;
     text-align: center;
     min-height: 221px;
+    &.blogs {
+      background-image: url("../img/blog.png");
+    }
   }
   &__heading {
     @include g.font-size(32);

@@ -1,0 +1,29 @@
+@use "../../global" as g;
+
+.p-pagination {
+  text-align: center;
+  margin-bottom: 45px;
+  a,
+  span:not(.extend) {
+    display: inline-block;
+    border: 1px solid g.$color-primary;
+    @include g.font-size(16);
+    font-weight: bold;
+    line-height: 1;
+    width: 50px;
+    padding: 17px 0;
+  }
+  a:not(.last),
+  span {
+    margin-right: 9px;
+  }
+  .extend {
+    @include g.font-size(16);
+    font-weight: bold;
+    margin: 0 36px;
+  }
+  .current {
+    background-color: g.$color-primary;
+    color: #fff;
+  }
+}

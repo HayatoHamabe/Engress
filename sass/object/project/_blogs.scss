@@ -1,0 +1,68 @@
+@use "../../global" as g;
+
+.p-blogs {
+  &__heading {
+    margin: 58px 0 60px;
+  }
+  &__blog {
+    margin-right: 67px;
+    max-width: 900px;
+    margin: 0 auto;
+    @include g.mq(md) {
+    }
+  }
+  &__list {
+    margin-bottom: 106px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 31px;
+    }
+  }
+  &__item {
+    display: flex;
+    gap: 20px;
+  }
+  &__img-wrapper {
+    position: relative;
+    width: 240px;
+    max-height: 180px;
+  }
+  &__img {
+    object-fit: cover;
+  }
+  &__category {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: g.$color-primary;
+    color: #fff;
+    border: 1px solid #707070;
+    @include g.font-size(12);
+    padding: 3px 8px 6px;
+  }
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &__info {
+    position: relative;
+    flex: 1;
+  }
+  &__link {
+    @include g.font-size(26);
+    font-weight: bold;
+    display: block;
+    letter-spacing: 0;
+    text-decoration: underline;
+  }
+  &__time {
+    @include g.font-size(16);
+    line-height: 1;
+    @include g.mq(md) {
+      @include g.font-size(18);
+    }
+  }
+}
