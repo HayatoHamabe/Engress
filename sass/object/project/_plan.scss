@@ -1,0 +1,38 @@
+@use "../../global" as g;
+
+.p-plan {
+  padding: 0 15px;
+  &__inner {
+    max-width: 900px;
+    padding: 58px 0 90px;
+    margin: 0 auto;
+  }
+  &__heading {
+    padding-bottom: 60px;
+  }
+  &__system {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 46px;
+  }
+  &__admission,
+  &__monthly {
+    background-color: g.$color-primary;
+    color: #fff;
+    text-align: center;
+    @include g.font-size(22);
+    font-weight: bold;
+    line-height: 1;
+    width: 280px;
+    padding: 35px 0 32px;
+  }
+  &__plus {
+    line-height: 1;
+    @include g.font-size(36);
+  }
+  &__text {
+    @include g.font-size(16);
+  }
+}

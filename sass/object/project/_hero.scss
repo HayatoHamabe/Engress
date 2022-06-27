@@ -57,3 +57,23 @@
     }
   }
 }
+
+.p-sub-hero {
+  padding-top: 80px;
+  @include g.mq(lg) {
+    padding-top: 60px;
+  }
+  &__inner {
+    background-image: url("../img/plan.png");
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 221px;
+  }
+  &__heading {
+    @include g.font-size(32);
+  }
+}
