@@ -3,6 +3,7 @@
 
 <head>
   <?php get_header(); ?>
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
       <div class="p-plan-list__inner l-section__page">
         <h2 class="p-plan-list__heading l-section__page-heading">料金表</h2>
 
-        <dl class="p-plan-list__list">
+        <div class="p-plan-list__list js-scrollable">
           <div class="p-plan-list__item">
             <div class="p-plan-list__item-heading">基礎プラン</div>
             <div class="p-plan-list__item-inside">
@@ -96,7 +97,7 @@
               <div class="p-plan-list__content">月二回の模試（解説付き）</div>
             </div>
           </div>
-        </dl>
+        </div>
       </div>
     </section>
 
@@ -104,6 +105,8 @@
   </main>
 
   <?php get_template_part('/common/footer'); ?>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/scroll-hint.min.js"></script>
   <?php get_footer(); ?>
 
 </body>

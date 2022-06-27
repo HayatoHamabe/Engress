@@ -15,6 +15,9 @@
     color: #fff;
     line-height: 1;
     margin-bottom: 25px;
+    @include g.mq(lg) {
+      @include g.font-size(28);
+    }
   }
   &__btn {
     display: inline-block;
