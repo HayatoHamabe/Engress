@@ -33,8 +33,10 @@
   }
   &__link {
     display: block;
+    width: fit-content;
     color: #fff;
     text-decoration: underline;
+    margin: 0 auto;
     @include g.font-size(16);
     &:hover {
       opacity: 0.8;
