@@ -3,6 +3,7 @@
 
 <head>
   <?php get_header(); ?>
+  <title><?php wp_title('|', true, 'left'); ?></title>
 </head>
 
 <body>

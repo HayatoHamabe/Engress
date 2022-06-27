@@ -13,4 +13,17 @@
       line-height: 1.3;
     }
   }
+  // 下層ページ
+  &__page-heading {
+    @include g.font-size(32);
+    text-align: center;
+    line-height: 1;
+    @include g.mq(lg) {
+      @include g.font-size(26);
+    }
+    @include g.mq(md) {
+      @include g.font-size(28);
+      line-height: 1.3;
+    }
+  }
 }

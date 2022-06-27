@@ -1,0 +1,80 @@
+@use "../../global" as g;
+
+.p-plan-list {
+  padding: 0 15px 61px;
+  &__inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  &__heading {
+    margin-bottom: 70px;
+  }
+  &__list {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__item {
+    border: 1px solid g.$color-primary;
+    text-align: center;
+    width: 220px;
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+  &__item-heading {
+    background-color: g.$color-primary;
+    @include g.font-size(16);
+    color: #fff;
+    line-height: 1;
+    padding: 21px 0;
+    margin-bottom: 30px;
+  }
+  &__recomend {
+    background-color: g.$color-secondary;
+    margin-top: -1px;
+    margin-right: -1px;
+    margin-left: -1px;
+    span {
+      display: block;
+      margin-bottom: 19px;
+    }
+  }
+  &__item-inside {
+    padding: 0 15px;
+    height: 414px;
+  }
+  &__price {
+    @include g.font-size(25);
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+  &__price-recommend {
+    color: g.$color-secondary;
+  }
+  &__monthly {
+    @include g.font-size(16);
+    display: block;
+    line-height: 1;
+    margin-bottom: 48px;
+  }
+  &__content {
+    align-items: center;
+    @include g.font-size(16);
+    line-height: 1;
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 14px;
+      height: 7px;
+      border-left: 3px solid g.$color-primary;
+      border-bottom: 3px solid g.$color-primary;
+      margin-right: 11px;
+      margin-bottom: 3px;
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -12,6 +12,8 @@ add_filter('register_post_type_args', 'post_has_archive', 10, 2);
 
 function init_func()
 {
+  // wp_head で title 出力
+  add_theme_support('title-tag');
   //　アイキャッチ設定追加
   add_theme_support('post-thumbnails');
 }
