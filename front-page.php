@@ -242,7 +242,17 @@
                     <?php the_post_thumbnail('thumbnail', ['class' => 'p-post__blog-img']); ?>
                   </div>
                   <div class="p-post__blog-info">
-                    <a href="<?php the_permalink(); ?>" class="p-post__blog-link"><?php the_title(); ?></a>
+                    <a href="<?php the_permalink(); ?>" class="p-post__blog-link">
+                      <!-- 文字数 30 文字以上のとき、... で省略表示する -->
+                      <?php
+                      if (mb_strlen($post->post_title) > 30) {
+                        $title = mb_substr($post->post_title, 0, 30);
+                        echo $title . '...';
+                      } else {
+                        echo $post->post_title;
+                      }
+                      ?>
+                    </a>
                     <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-post__blog-time"><?php echo get_the_date("Y.m.d"); ?></time>
                   </div>
                 </div>
