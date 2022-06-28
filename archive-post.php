@@ -36,13 +36,15 @@
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="p-blogs__item">
                   <div class="p-blogs__img-wrapper">
-                    <?php $category = get_the_category(); ?>
-                    <span class="p-blogs__category"><?php echo $category[0]->cat_name; ?></span>
-                    <?php if (has_post_thumbnail()) : ?>
-                      <?php the_post_thumbnail('full', ['class' => 'p-blogs__img']); ?>
-                    <?php else : ?>
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="no-image" class='p-blogs__img' />
-                    <?php endif; ?>
+                    <a href="<?php the_permalink(); ?>">
+                      <?php $category = get_the_category(); ?>
+                      <span class="p-blogs__category"><?php echo $category[0]->cat_name; ?></span>
+                      <?php if (has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail('full', ['class' => 'p-blogs__img']); ?>
+                      <?php else : ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="no-image" class='p-blogs__img' />
+                      <?php endif; ?>
+                    </a>
                   </div>
                   <div class="p-blogs__info">
                     <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-blogs__time"><?php echo get_the_date("Y.m.d"); ?></time>
@@ -57,7 +59,7 @@
                       }
                       ?>
                     </a>
-                    <p>
+                    <p class="p-blog__text">
                       <?php
                       if (mb_strlen($post->post_content, 'UTF-8') > 70) {
                         $content = str_replace('\n', '', mb_substr(strip_tags($post->post_content), 0, 70, 'UTF-8'));
