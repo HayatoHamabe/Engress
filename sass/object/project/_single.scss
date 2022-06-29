@@ -1,11 +1,19 @@
 @use "../../global" as g;
 
 .p-single {
+  display: flex;
+  justify-content: center;
   padding: 60px 15px 36px;
+  @include g.mq(md) {
+    display: block;
+  }
   margin: 0 auto;
   &__main {
     max-width: 590px;
     margin-right: 36px;
+    @include g.mq(md) {
+      margin-right: 0;
+    }
   }
   &__category {
     display: inline-block;

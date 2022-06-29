@@ -1,6 +1,9 @@
 @use "../../global" as g;
 
 .p-recommend {
+  @include g.mq(md) {
+    margin-bottom: 60px;
+  }
   &__heading {
     @include g.font-size(26);
     line-height: 1;
