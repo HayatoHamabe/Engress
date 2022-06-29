@@ -1,0 +1,51 @@
+@use "../../global" as g;
+
+.p-sidebar {
+  max-width: 269px;
+  &__relation {
+    margin-bottom: 49px;
+  }
+  &__relation-title,
+  &__category-title {
+    background-color: g.$color-primary;
+    color: #fff;
+    @include g.font-size(21);
+    text-align: center;
+    line-height: 1;
+    padding: 18px 0;
+    margin-bottom: 30px;
+  }
+  &__relation-blog {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+  }
+  &__relation-img-link {
+    min-width: 100px;
+    height: 70px;
+    margin-right: 17px;
+  }
+  &__relation-img {
+    width: 100%;
+    height: 100%;
+  }
+  &__relation-link {
+    @include g.font-size(12);
+    text-decoration: underline;
+  }
+  &__category-list {
+    list-style: none;
+  }
+  &__category-item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &__category-link {
+    @include g.font-size(16);
+    display: block;
+    font-weight: bold;
+    line-height: 1;
+  }
+}

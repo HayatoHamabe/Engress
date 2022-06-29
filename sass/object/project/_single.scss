@@ -1,0 +1,31 @@
+@use "../../global" as g;
+
+.p-single {
+  padding: 60px 15px 36px;
+  margin: 0 auto;
+  &__main {
+    max-width: 590px;
+    margin-right: 36px;
+  }
+  &__category {
+    display: inline-block;
+    background-color: g.$color-primary;
+    color: #fff;
+    @include g.font-size(12);
+    padding: 10px 25px;
+  }
+  &__title {
+    @include g.font-size(28);
+    line-height: 1.5;
+    margin: 30px 0 25px;
+  }
+  &__time {
+    @include g.font-size(16);
+    line-height: 1;
+  }
+  &__img {
+    object-fit: cover;
+    max-height: 370px;
+    margin-bottom: 40px;
+  }
+}

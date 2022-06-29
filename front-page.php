@@ -225,8 +225,8 @@
           // タグ「ブログ」がついた投稿の最新３件を取得
           $arg   = array(
             'posts_per_page' => 3, // 表示する件数
-            'orderby'        => 'id', // 日付でソート
-            'order'          => 'ASC',
+            'orderby'        => 'Date',
+            'order'          => 'DESC',
             'tag'            => 'ブログ'
           );
           $posts = get_posts($arg);
