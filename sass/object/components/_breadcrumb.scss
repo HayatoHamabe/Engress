@@ -16,7 +16,7 @@
     margin: 0 auto;
   }
   a {
-    text-decoration: underline;
+    border-bottom: 1px solid g.$color-primary;
   }
   span {
     &:not(:first-child) {
