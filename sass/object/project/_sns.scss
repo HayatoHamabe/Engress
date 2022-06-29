@@ -1,0 +1,13 @@
+@use "../../global" as g;
+
+.p-sns {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+}

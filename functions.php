@@ -30,7 +30,14 @@ function bcn_add($bcnObj)
     $trail_tmp = clone $bcnObj->trail[1];
     $bcnObj->trail[1] = clone $bcnObj->trail[0];
     $bcnObj->trail[0] = $trail_tmp;
+    return $bcnObj;
   }
-  return $bcnObj;
+  // 投稿の詳細ページのとき、２番目にブログアーカイブへのリンク追加
+  if (is_singular('post')) {
+    $item = new bcn_breadcrumb('ブログ', null, array('post'), home_url('/blogs/'), null, true);
+    $stuck = array_pop($bcnObj->breadcrumbs); // HOME 一時退避
+    $bcnObj->breadcrumbs[] = $item; //ブログ 追加
+    $bcnObj->breadcrumbs[] = $stuck; //HOME 戻す
+  }
 }
 add_action('bcn_after_fill', 'bcn_add');
