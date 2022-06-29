@@ -47,7 +47,7 @@
                     </a>
                   </div>
                   <div class="p-blogs__info">
-                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-blogs__time"><?php echo get_the_date("Y.m.d"); ?></time>
+                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-blogs__time"><?php echo get_the_date("Y-m-d"); ?></time>
                     <a href="<?php the_permalink(); ?>" class="p-blogs__link">
                       <!-- 文字数 30 文字以上のとき、... で省略表示する -->
                       <?php
@@ -76,7 +76,7 @@
             wp_reset_postdata(); ?>
           </div>
           <!-- pagenation -->
-          <div class="p-pagination">
+          <div class="c-pagination">
             <?php wp_pagenavi(); ?>
           </div><!-- /pagenation -->
         </div>

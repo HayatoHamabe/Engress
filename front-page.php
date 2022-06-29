@@ -253,7 +253,7 @@
                       }
                       ?>
                     </a>
-                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-post__blog-time"><?php echo get_the_date("Y.m.d"); ?></time>
+                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-post__blog-time"><?php echo get_the_date("Y-m-d"); ?></time>
                   </div>
                 </div>
               <?php endforeach; ?>
@@ -279,7 +279,7 @@
               <?php while ($news->have_posts()) : $news->the_post(); ?>
                 <div class="p-post__news-item">
                   <div class="p-post__news-info">
-                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-post__news-time"><?php echo get_the_date("Y.m.d"); ?></time>
+                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-post__news-time"><?php echo get_the_date("Y-m-d"); ?></time>
                     <a href="<?php the_permalink(); ?>" class="p-post__news-link"><?php the_title(); ?></a>
                   </div>
                 </div>
