@@ -26,4 +26,15 @@
       margin-right: 6px;
     }
   }
+  // タイトルの横幅が60px以上になるとき、...で省略させる
+  span[property="name"] {
+    display: inline-block;
+    padding: 0;
+    margin-top: -3px;
+    vertical-align: middle;
+    max-width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

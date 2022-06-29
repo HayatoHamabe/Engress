@@ -26,7 +26,7 @@
                 <a href="<?php echo esc_url(home_url()); ?>" class="p-gloval-nav__link">ホーム</a>
               </li>
               <li class="p-global-nav__item">
-                <a href="" class="p-gloval-nav__link">お知らせ</a>
+                <a href="<?php echo esc_url(home_url("news")); ?>" class="p-gloval-nav__link">お知らせ</a>
               </li>
               <li class="p-global-nav__item">
                 <a href="<?php echo esc_url(home_url("blogs")); ?>" class="p-gloval-nav__link">ブログ</a>

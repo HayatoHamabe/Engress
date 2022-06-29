@@ -49,7 +49,7 @@
               <?php if (has_post_thumbnail()) : ?>
                 <?php the_post_thumbnail('full', ['class' => 'p-single__img']); ?>
               <?php else : ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="no-image" class='p-blogs__img' />
+                <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="no-image" class='p-single__img' />
               <?php endif; ?>
             </div>
 

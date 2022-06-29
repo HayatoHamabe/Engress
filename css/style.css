@@ -511,6 +511,16 @@ img {
 .c-breadcrumb span:not(:last-child) {
   margin-right: 6px;
 }
+.c-breadcrumb span[property=name] {
+  display: inline-block;
+  padding: 0;
+  margin-top: -3px;
+  vertical-align: middle;
+  max-width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .c-pagination {
   text-align: center;
