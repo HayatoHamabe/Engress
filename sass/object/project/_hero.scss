@@ -75,6 +75,9 @@
     &.blogs {
       background-image: url("../img/blog.png");
     }
+    &.news {
+      background-image: url("../img/news.png");
+    }
   }
   &__heading {
     @include g.font-size(32);

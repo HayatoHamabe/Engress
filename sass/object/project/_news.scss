@@ -1,0 +1,37 @@
+@use "../../global" as g;
+
+.p-news {
+  padding: 0 15px;
+  &__inner {
+    max-width: 900px;
+    margin: 58px auto 0;
+  }
+  &__heading {
+    margin-bottom: 45px;
+  }
+  &__list {
+    list-style: none;
+    margin-bottom: 65px;
+  }
+  &__item {
+    display: flex;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    padding: 23px 0 24px;
+  }
+  &__time {
+    @include g.font-size(16);
+    white-space: nowrap;
+    margin-right: 51px;
+    @include g.mq(md) {
+      @include g.font-size(14);
+    }
+  }
+  &__link {
+    @include g.font-size(16);
+    text-decoration: underline;
+    @include g.mq(md) {
+      @include g.font-size(14);
+    }
+  }
+}

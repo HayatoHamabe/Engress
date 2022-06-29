@@ -39,7 +39,7 @@
                   </li>
                 </ul>
 
-                <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-single__time"><?php echo get_the_date("Y.m.d"); ?></time>
+                <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-single__time"><?php echo get_the_date("Y-m-d"); ?></time>
               </div>
             </div><!-- p-sns -->
 
@@ -82,7 +82,7 @@
                     </a>
                   </div>
                   <div class="p-recommend__blog-info">
-                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-recommend__blog-time"><?php echo get_the_date("Y.m.d"); ?></time>
+                    <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-recommend__blog-time"><?php echo get_the_date("Y-m-d"); ?></time>
 
                     <a href="<?php the_permalink(); ?>" class="p-recommend__blog-link">
                       <!-- 文字数 30 文字以上のとき、... で省略表示する -->
