@@ -280,7 +280,16 @@
                 <div class="p-post__news-item">
                   <div class="p-post__news-info">
                     <time datetime="<?php echo get_the_date("Y-m-d"); ?>" class="p-post__news-time"><?php echo get_the_date("Y.m.d"); ?></time>
-                    <a href="<?php the_permalink(); ?>" class="p-post__news-link"><?php the_title(); ?></a>
+                    <a href="<?php the_permalink(); ?>" class="p-post__news-link">
+                      <?php
+                      if (mb_strlen($post->post_title) > 30) {
+                        $title = mb_substr($post->post_title, 0, 30);
+                        echo $title . '...';
+                      } else {
+                        echo $post->post_title;
+                      }
+                      ?>
+                    </a>
                   </div>
                 </div>
               <?php endwhile; ?>

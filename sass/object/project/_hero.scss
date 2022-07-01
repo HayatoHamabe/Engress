@@ -29,7 +29,6 @@
   }
   &__text {
     @include g.font-size(18);
-    line-height: 1;
     margin-bottom: 51px;
     @include g.mq(lg) {
       @include g.font-size(16);
