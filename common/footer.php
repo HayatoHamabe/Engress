@@ -1,6 +1,6 @@
 <footer class="l-footer">
   <div class="l-footer__inner">
-    <nav class="p-footer__nav">
+    <div class="p-footer__nav">
       <ul class="p-footer__list">
         <li class="p-footer__item">
           <a href="<?php echo esc_url(home_url()); ?>" class="p-footer__link">ホーム</a>
@@ -15,7 +15,7 @@
           <a href="<?php echo esc_url(home_url("price")); ?>" class="p-footer__link">コース・料金</a>
         </li>
       </ul>
-    </nav>
+    </div>
 
     <div class="p-footer__heading">
       <div class="p-footer__logo-wrapper">
