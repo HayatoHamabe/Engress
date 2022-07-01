@@ -76,3 +76,5 @@
     </div>
   </div>
 </header>
+<!-- loading画面 -->
+<div id="js-loader" class="loader"></div>
