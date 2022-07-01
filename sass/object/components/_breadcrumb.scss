@@ -3,7 +3,8 @@
 .c-breadcrumb {
   background-color: #f8f8f8;
   padding: 0 15px;
-  &.single {
+  &.single,
+  &.top {
     padding-top: 80px;
   }
   &__inner {

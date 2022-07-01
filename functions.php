@@ -41,3 +41,39 @@ function bcn_add($bcnObj)
   }
 }
 add_action('bcn_after_fill', 'bcn_add');
+
+// MW WP form 不要なpタグを出力しないようにする
+function mvwpform_autop_filter()
+{
+  if (class_exists('MW_WP_Form_Admin')) {
+    $mw_wp_form_admin = new MW_WP_Form_Admin();
+    $forms = $mw_wp_form_admin->get_forms();
+    foreach ($forms as $form) {
+      add_filter('mwform_content_wpautop_mw-wp-form-' . $form->ID, '__return_false');
+    }
+  }
+}
+mvwpform_autop_filter();
+
+// MW WP form バリデーションメッセージの変更
+function my_error_message($error, $key, $rule)
+{
+  if ($key === 'company' && $rule === 'noempty') {
+    return '会社名を入力してください。';
+  }
+  if ($key === 'name' && $rule === 'noempty') {
+    return '氏名を入力してください。';
+  }
+  if ($key === 'email' && $rule === 'noempty') {
+    return 'メールアドレスを入力してください';
+  }
+  if ($key === 'tel' && $rule === 'noempty') {
+    return '電話番号を入力してください';
+  }
+  if ($key === 'contact' && $rule === 'noempty') {
+    return 'お問い合わせ内容を入力してください';
+  }
+  return $error;
+}
+// form-2215 の「2215」はMW WP form で自動生成されたキー番号
+add_filter('mwform_error_message_mw-wp-form-2215', 'my_error_message', 10, 3);
