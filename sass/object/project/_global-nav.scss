@@ -36,14 +36,18 @@
     font-weight: bold;
     @include g.font-size(16);
     margin-left: 28px;
+    &:hover {
+      opacity: 0.7;
+    }
+    @include g.mq(xl) {
+      @include g.font-size(15);
+      margin-left: 18px;
+    }
     @include g.mq(lg) {
       @include g.font-size(24);
       text-align: center;
       background-color: #fff;
       width: 100%;
-      &:hover {
-        opacity: 0.8;
-      }
       &:not(:last-child) {
         margin-bottom: 25px;
       }

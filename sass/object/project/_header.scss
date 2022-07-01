@@ -24,10 +24,17 @@
     align-items: center;
     font-weight: bold;
     @include g.font-size(16);
+    @include g.mq(xl) {
+      @include g.font-size(15);
+      letter-spacing: 0;
+    }
   }
   &__business-phone-icon {
     height: 15px;
     margin-right: 5px;
+    @include g.mq(xl) {
+      height: 13px;
+    }
   }
 }
 
