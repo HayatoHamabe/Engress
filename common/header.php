@@ -60,11 +60,11 @@
         </div>
 
         <div class="p-header-btn__document-wrapper">
-          <a href="<?php echo esc_url(home_url("contact")); ?>" class="p-header-btn__document">資料請求</a>
+          <a href="<?php echo esc_url(home_url("form")); ?>" class="p-header-btn__document">資料請求</a>
         </div>
 
         <div class="p-header-btn__contact-wrapper">
-          <a href="<?php echo esc_url(home_url("contact")); ?>" class="p-header-btn__contact">お問い合わせ</a>
+          <a href="<?php echo esc_url(home_url("form")); ?>" class="p-header-btn__contact">お問い合わせ</a>
         </div>
 
         <!-- only low 960px -->

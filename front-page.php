@@ -21,10 +21,10 @@
         </p>
 
         <div>
-          <a href="<?php echo esc_url(home_url('contact')); ?>" class="p-hero__btn">資料請求</a>
+          <a href="<?php echo esc_url(home_url('form')); ?>" class="p-hero__btn">資料請求</a>
         </div>
         <div>
-          <a href="<?php echo esc_url(home_url('contact')); ?>" class="p-hero__link">お問い合わせ</a>
+          <a href="<?php echo esc_url(home_url('form')); ?>" class="p-hero__link">お問い合わせ</a>
         </div>
       </div>
     </div>
