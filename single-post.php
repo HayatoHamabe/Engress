@@ -64,7 +64,7 @@
           $arg   = array(
             'posts_per_page' => 3, // 表示する件数
             'orderby'        => 'date',
-            'order'          => 'ASC',
+            'order'          => 'DESC',
             'tag'            => 'pickup'
           );
           $posts = get_posts($arg);

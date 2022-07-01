@@ -21,6 +21,7 @@
   }
   &__worrie {
     @include g.font-size(18);
+    line-height: 2;
     @include g.mq(md) {
       @include g.font-size(16);
       &:not(:last-child) {
