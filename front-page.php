@@ -141,7 +141,7 @@
                   <span class="p-success__profession"><?php the_field('profession'); ?></span>
                   <span class="p-success__name"><?php the_field('name'); ?>さん</span>
                 </div>
-                <div class="p-success__score">3ヶ月でTOEFL80→108点</div>
+                <div class="p-success__score"><?php the_field('score'); ?></div>
               </div>
             <?php endwhile; ?>
           </div>

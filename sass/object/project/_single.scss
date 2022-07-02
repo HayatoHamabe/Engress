@@ -12,6 +12,7 @@
     max-width: 590px;
     margin-right: 36px;
     @include g.mq(md) {
+      max-width: 100%;
       margin-right: 0;
     }
   }
@@ -30,10 +31,17 @@
   &__time {
     @include g.font-size(16);
     line-height: 1;
+    @include g.mq(md) {
+      @include g.font-size(12);
+      white-space: nowrap;
+    }
   }
   &__img {
     object-fit: cover;
     max-height: 370px;
     margin-bottom: 40px;
+    @include g.mq(md) {
+      width: 100%;
+    }
   }
 }
