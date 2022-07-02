@@ -77,6 +77,9 @@
     &.news {
       background-image: url("../img/news.png");
     }
+    &.form {
+      background-image: url("../img/cta.png");
+    }
   }
   &__heading {
     @include g.font-size(32);

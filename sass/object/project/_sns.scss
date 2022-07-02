@@ -5,9 +5,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    align-items: center;
+    @include g.mq(md) {
+      @include g.font-size(12);
+      white-space: nowrap;
+    }
   }
   &__list {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
   }
 }
